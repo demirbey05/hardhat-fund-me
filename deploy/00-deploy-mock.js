@@ -1,7 +1,7 @@
 const { getNamedAccounts, deployments, network } = require("hardhat")
 const { developmentChains } = require("../helper-hardhat-config")
-const DECIMAL = 8
-const INITIAL_ANSWER = 2000
+const DECIMAL = "8"
+const INITIAL_ANSWER = "200000000000"
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy, log } = deployments
