@@ -21,7 +21,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         from: deployer,
         args: [priceFeedAddress],
         log: true,
-        waitConfirmations: network.config.blockConfirmations
+        waitConfirmations: network.config.blockConfirmations,
     })
 
     if (!developedChains) {

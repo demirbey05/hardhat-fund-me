@@ -13,7 +13,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         const fundme = await deploy("MockV3Aggregator", {
             from: deployer,
             args: [DECIMAL, INITIAL_ANSWER],
-            log: true
+            log: true,
         })
         log("Mocks Deployed!")
         log("------------------------------------------------")
